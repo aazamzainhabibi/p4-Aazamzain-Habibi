@@ -1,0 +1,206 @@
+#include <iostream>
+using namespace std;
+//prosedur
+void score(int n1,int n2,int n3,int n4,int n5,int n6,int n7,int n8,int n9,int n10){
+    int hasil=n1+n2+n3+n4+n5+n6+n7+n8+n9+n10; //rumus
+    cout<<"total score :  "<<hasil;
+}
+int main(){
+    //deklarasi
+    //variabel
+    string nama;
+    int nim,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10;
+    char jawab1,jawab2,jawab3,jawab4,jawab5,jawab6,jawab7,jawab8,jawab9,jawab10;
+    
+    cout<<"Login untuk mengerjakan soal ujian \n"<<endl;
+    cout<<"Masukan Nama :  ";
+    getline(cin, nama);
+    cout<<"Masukan Nim :   ";
+    cin>>nim;
+    cout<<endl;
+    cout<<" Mengerjakan soal dengan baik dan tenang pilihlah a,b,c,d yang menurut jawaban anda benar\n"<<endl;
+    
+    string soal [10];
+    soal[0] =" 1.virus corona berasal dari kota mana ?\n";
+    soal[1] =" 2.virus corona sendiri berasal dari negara ?\n";
+    soal[2] =" 3.siapakah nama dokter yang pertama kali memperingatkan soalvirus ini ?\n";
+    soal[3] =" 4.infeksi virus corona disebut apa ?\n";
+    soal[4] =" 5.kapan ditemukannya virus corona tersebut..\n";
+    soal[5] =" 6.gejala umum virus corona adalah..\n";
+    soal[6] =" 7.kelompok virus yang juga termasuk dalam virus corona adalah...\n";
+    soal[7] =" 8.gejala lain infeksi yang diakibatkan virus corona adalah..\n";
+    soal[8] =" 9.dokter akan memastikan diagnosis apakah seorang terkena atau tidak dengan cara ?\n";
+    soal[9] =" 10.berapakah jumlah orang yang terkena covid di indonesia pada tanggal 13/5/2020 ?\n";
+    
+    cout<<soal[0];     //ARRAY 1
+    cout<<" a.Guangzhou\n";
+    cout<<" b.Wuhan\n";
+    cout<<" c.Jieyang\n";
+    cout<<" d.Qingyuan\n"<<endl;
+    cout<<" jawab :  ";
+    cin>>jawab1;
+    cout<<endl;
+    
+    cout<<soal[1];     //ARRAY 2
+    cout<<" a.Malaysia\n";
+    cout<<" b.Amerika\n";
+    cout<<" c.Italy\n";
+    cout<<" d.China\n";
+    cout<<" jawab :  ";
+    cin>>jawab2;
+    cout<<endl;
+    
+    cout<<soal[2];   //ARRAY 3
+    cout<<" a.Dokter Li Wenliang\n";
+    cout<<" b.Dokter ai fen\n";
+    cout<<" c.Dokter Zhangping\n";
+    cout<<" d.Dokter Qingyang\n";
+    cout<<" jawab :  ";
+    cin>>jawab3;
+    cout<<endl;
+    
+    cout<<soal[3];   //ARRAY 4
+    cout<<" a.Covid-19\n";
+    cout<<" b.Sars\n";
+    cout<<" c.Malaria\n";
+    cout<<" d.DBD\n";
+    cout<<" jawab :  ";
+    cin>>jawab4;
+    cout<<endl;
+    
+    cout<<soal[4];
+    cout<<" a.akhir november 2019\n";
+    cout<<" b.akhir oktober 2019\n";
+    cout<<" c.akhir desember 2019\n";
+    cout<<" d.akhir september 2019\n";
+    cout<<" jawab :  ";
+    cin>>jawab5;
+    cout<<endl;
+    
+    cout<<soal[5];
+    cout<<" a.demam,batuk kering,sesak nafas\n";
+    cout<<" b.demam tinggi,flu\n";
+    cout<<" c.diare\n";
+    cout<<" d.semua benar\n";
+    cout<<" jawab :  ";
+    cin>>jawab6;
+    cout<<endl;
+    
+    cout<<soal[6];
+    cout<<" a.SARS dan MERS\n";
+    cout<<" b.DBD\n";
+    cout<<" c.SARS\n";
+    cout<<" d.semua benar\n";
+    cout<<" jawab :  ";
+    cin>>jawab7;
+    cout<<endl;
+    
+    cout<<soal[7];
+    cout<<" a.Diare,sakit kepala,konjungtivitis\n";
+    cout<<" b.Demam\n";
+    cout<<" c.Sesak nafas\n";
+    cout<<" d.Flu\n";
+    cout<<" jawab :  ";
+    cin>>jawab8;
+    cout<<endl;
+    
+    cout<<soal[8];
+    cout<<" a.Rapid test,Swab test,CT scan\n";
+    cout<<" b.Rapid test\n";
+    cout<<" c.Swab test\n";
+    cout<<" d.semua benar\n";
+    cout<<" jawab :  ";
+    cin>>jawab9;
+    cout<<endl;
+    
+    cout<<soal[9];
+    cout<<" a.14.457\n";
+    cout<<" b.14.567\n";
+    cout<<" c.15.438\n";
+    cout<<" d.13.456\n";
+    cout<<" jawab :  ";
+    cin>>jawab10;
+    cout<<endl;
+    
+    cout<<" Hasil Ujian :  \n"<<endl;
+    
+    cout<<"Nama:  "<<nama<<endl;
+    cout<<"Nim :  "<<nim<<endl<<endl;
+    
+    if((jawab1=='b') || (jawab1=='B')){
+        h1=10;
+        cout<<"1.Benar : "<<h1<<endl;
+    } else {
+        h1=-10;
+        cout<<"1.Salah : "<<h1<<endl;
+    }
+    if((jawab2=='d') || (jawab2=='D')){
+        h2=10;
+        cout<<"2.Benar : "<<h2<<endl;
+    } else {
+        h2=-10;
+        cout<<"2.Salah : "<<h2<<endl;
+    }
+    if((jawab3=='a') || (jawab3=='A')){
+        h3=10;
+        cout<<"3.Benar : "<<h3<<endl;
+    } else {
+        h3=-10;
+        cout<<"3.Salah : "<<h3<<endl;
+    }
+    if((jawab4=='a') || (jawab4=='A')){
+        h4=10;
+        cout<<"4.Benar : "<<h4<<endl;
+    } else {
+        h4=-10;
+        cout<<"4.salah : "<<h4<<endl;
+    }
+    if((jawab5=='c') || (jawab5=='C')){
+        h5=10;
+        cout<<"5.Benar : "<<h5<<endl;
+    } else {
+        h5=-10;
+        cout<<"5.Salah : "<<h5<<endl;
+    }
+    if((jawab6=='a') || (jawab6=='A')){
+        h6=10;
+        cout<<"6.Benar : "<<h6<<endl;
+    } else {
+        h6=-10;
+        cout<<"6.Salah : "<<h6<<endl;
+    }
+    if((jawab7=='a') || (jawab7=='A')){
+        h7=10;
+        cout<<"7.Benar : "<<h7<<endl;
+    } else {
+        h7=-10;
+        cout<<"7.Salah : "<<h7<<endl;
+    }
+    if((jawab8=='a') || (jawab8=='A')){
+        h8=10;
+        cout<<"8.Benar : "<<h8<<endl;
+    } else {
+        h8=-10;
+        cout<<"8.Salah : "<<h8<<endl;
+    }
+    if((jawab9=='a') || (jawab9=='A')){
+        h9=10;
+        cout<<"9.Benar :  "<<h9<<endl;
+    } else {
+        h9=-10;
+        cout<<"9.Salah :  "<<h9<<endl;
+    }
+    if((jawab10=='c') || (jawab10=='C')){
+        h10=10;
+        cout<<"10.Benar :  "<<h10<<endl;
+    } else {
+        h10=-10;
+        cout<<"10.Salah :  "<<h10<<endl;
+    }
+    cout<<endl;
+    score(h1,h2,h3,h4,h5,h6,h7,h8,h9,h10);
+    cout<<endl;
+    
+    
+    return 0;
+}
